@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="628dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavendar_border"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload the data"
+                android:textAlignment="center"
+                android:textColor="#21A4C6"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:outlineAmbientShadowColor="@color/red"
+                android:src="@drawable/uploadimg"
+
+                />
+
+            <EditText
+                android:id="@+id/uploadTopic"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavendar_border"
+                android:gravity="center_horizontal"
+                android:hint="Enter the topic name"
+                android:padding="16dp"
+                android:textSize="20dp"
+
+                />
+
+            <EditText
+                android:id="@+id/uploadDesc"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavendar_border"
+                android:gravity="center_horizontal"
+                android:hint="Enter the description"
+                android:padding="20dp"
+                android:textSize="20dp"
+
+                />
+
+            <EditText
+                android:id="@+id/uploadLang"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavendar_border"
+                android:gravity="center_horizontal"
+                android:hint="Enter language"
+                android:padding="20dp"
+                android:textSize="20dp"
+
+                />
+
+            <Button
+                android:id="@+id/SaveButton"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:textSize="20dp"
+                app:cardCornerRadius="50dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
